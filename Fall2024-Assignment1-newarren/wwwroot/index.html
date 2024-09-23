@@ -7,10 +7,16 @@
 <body style="background-color:powderblue;">
     <div id="Content">
         <h1 id="title"> Harold and Kumar go to White Castle</h1>
-        <img src="harold_kumar.jpg" id="CoverArt"/>
+        <div style="text-align: center;">
+            <img src="harold_kumar.jpg" id="CoverArt" />
+        </div>
         <h5 id="Rating">IMDb 7/10</h5>
-        <iframe src="https://www.youtube.com/watch?v=PjPSqp12wtk" title="Trailer" id="Trailer"></iframe>
-        <a href="https://www.imdb.com/title/tt0366551/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_harold%2520and%2520ku">IMDb</a>
+        <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/watch?v=PjPSqp12wtk" title="Trailer" id="Trailer"></iframe>
+        </div>
+        <div style="text-align: center;">
+            <a href="https://www.imdb.com/title/tt0366551/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_harold%2520and%2520ku">IMDb</a>
+        </div>
         <p id="Summary">
             A Korean-American office worker and his Indian-American stoner friend embark on a quest to satisfy their desire for White Castle burgers.
         </p>
@@ -26,7 +32,7 @@
     #Content {
         align-content: center;
         background-color: aliceblue;
-        height: 100vh;
+        height: 250vh;
         width: 100vw;
     }
     #title {
@@ -38,10 +44,11 @@
         border-radius: 50%;
         border-block-color: black;
         align-content: center;
-        height: 10vh;
-        width: 10vw;
-        margin-left: auto;
-        margin-right: auto;
+        height: 25vh;
+        width: 25vw;
+        margin: 0 auto;
+        max-width: 100%; 
+        height: auto;
     }
     #Actors {
         color: black;
@@ -62,6 +69,13 @@
 
     #Trailer {
         align-content: center;
+    }
+    ul{
+        padding-left: 0;
+    }
+
+    ul li{
+        list-style-position: inside;
     }
     
 </style>
